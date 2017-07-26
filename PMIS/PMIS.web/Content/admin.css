@@ -69,6 +69,7 @@ body{
     padding: 15px;
     left: 0;
     top: 0;
+    text-decoration: none !important;
 }
 
 .sidebar #accordion .panel .panel-heading:hover{
@@ -83,7 +84,7 @@ body{
     font-weight: bold;
 }
 
-.sidebar #accordion .panel .panel-heading a:hover{
+.sidebar #accordion .panel .panel-heading a:hover, .sidebar #accordion .panel .panel-heading a:visited, .sidebar #accordion .panel .panel-heading a:active{
     text-decoration: none;
 }
 
