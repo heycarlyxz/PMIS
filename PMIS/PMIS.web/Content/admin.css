@@ -31,14 +31,14 @@ body{
 }
 
 /*SIDEBAR*/
-.sidebar{
+.sidebar {
     height: 100vh;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 9;
     padding: 15px;
-    background-color: #888;
+    background-color: #512DA8;
     overflow: hidden;
 }
 
