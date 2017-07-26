@@ -26,5 +26,12 @@ namespace PMIS.web.Controllers
 
             return View();
         }
+
+        public ActionResult Sample()
+        {
+            ViewBag.Message = "Sample";
+
+            return View();
+        }
     }
 }
