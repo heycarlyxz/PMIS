@@ -12,15 +12,76 @@
 </head>
 <body>
     <header class="top-nav">
+
         <button class="btn pull-right top-right-menu">
             <span class="glyphicon glyphicon-user"></span>
+            <span>Welcome, User</span>
         </button>
-        <h3 style="color: #fff; margin: 0;">PMIS Testing</h3>
+        <h3 style="color: #fff; margin: 0;">PMIS</h3>
     </header>
     <div class="sidebar">
         <nav class="sidebar-menu">
-            <h3 style="margin: 0;">PMIS Prototype</h3>
+
+            <div class="form-group search-field hidden">
+                <input class="form-control" placeholder="Search" />
+            </div>
+
+            <h3 style="padding: 15px; margin: 0px;">PMIS</h3>
+
+            <!-- ACCORDION MENU -->
+            <div class="panel-group" id="accordion">
+
+
+                <div class="panel">
+                    <div class="panel-heading panel-active">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#dashboard">
+                                Dashboard
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#projects">
+                                Projects
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#tasks">
+                                Tasks
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#resources">
+                                Resources
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+
+
+            </div>
         </nav>
+
+
     </div>
 
     <main class="main-content">
@@ -29,12 +90,6 @@
 
             @RenderBody()
             
-            <div class="jumbotron">
-                <h3>sample</h3>
-            </div>
-            <footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            </footer>
         </div>
         
     </main>

@@ -11,8 +11,9 @@ body{
     top: 0;
     left: 0;
     z-index: 8;
-    background-color: #fff;
+    background-color: #fefefe;
     padding: 15px;
+    box-shadow: 0 0 15px #eeeeee;
     
     -webkit-transition: background-color 0.4s ease-in-out;
     -moz-transition: background-color 0.4s ease-in-out;
@@ -37,7 +38,7 @@ body{
     top: 0;
     left: 0;
     z-index: 9;
-    padding: 15px;
+    padding: 0px;
     background-color: #00695C;
     overflow: hidden;
 }
@@ -46,8 +47,55 @@ body{
     color: #fff;
 }
 
+.sidebar-menu #accordion{
+    margin-top: 6px;
+}
+
+.sidebar #accordion .panel {
+    background-color: #00695C;
+    margin: 0;
+    box-shadow: none;
+}
+
+.sidebar #accordion .panel .panel-heading{
+    position: relative;
+    height: 50px;
+}
+
+.sidebar #accordion .panel .panel-heading a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    left: 0;
+    top: 0;
+}
+
+.sidebar #accordion .panel .panel-heading:hover{
+    background-color: #009688;
+}
+
+.sidebar #accordion .panel .panel-active, .sidebar #accordion .panel .panel-active:hover {
+    background-color: #004D40;
+}
+
+.sidebar #accordion .panel .panel-active a{
+    font-weight: bold;
+}
+
+.sidebar #accordion .panel .panel-heading a:hover{
+    text-decoration: none;
+}
+
 .main-content{
     padding-top: 65px;
+}
+
+.search-field{
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    z-index: 99;
 }
 
 /*Extra small devices (mobile)*/
@@ -70,8 +118,8 @@ body{
         transition: padding-left 0.4s ease-in-out;
     }
 
-    .top-nav{
-        background-color: #888;
+    .top-nav {
+        background-color: #00695C;
 
         -webkit-transition: background-color 0.4s ease-in-out;
         -moz-transition: background-color 0.4s ease-in-out;
@@ -105,6 +153,7 @@ body{
         -moz-transition: padding-left 0.4s ease-in-out;
         transition: padding-left 0.4s ease-in-out;
     }
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -124,12 +173,13 @@ body{
         -moz-transition: padding-left 0.4s ease-in-out;
         transition: padding-left 0.4s ease-in-out;
     }
+
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px){
     .sidebar{
-        width: 300px;
+        width: 200px;
         
         -webkit-transition: width 0.4s ease-in-out;
         -moz-transition: width 0.4s ease-in-out;
@@ -137,12 +187,13 @@ body{
     }
     
     .main-content{
-        padding-left: 300px;
+        padding-left: 200px;
         
         -webkit-transition: padding-left 0.4s ease-in-out;
         -moz-transition: padding-left 0.4s ease-in-out;
         transition: padding-left 0.4s ease-in-out;
     }
+
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/

@@ -10,7 +10,7 @@ namespace PMIS.web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index","Dashboard", new { area = ""});
         }
 
         public ActionResult About()
