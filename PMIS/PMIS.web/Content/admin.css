@@ -1,0 +1,166 @@
+﻿
+body{
+    padding-top: 0px;
+}
+
+/*HEADER*/
+.top-nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color: #fff;
+    padding: 15px;
+    
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+
+}
+
+.top-nav .top-right-menu{
+    margin: -10px;
+    color: #888;
+    background-color: transparent;
+}
+
+.top-nav .top-right-menu:focus{
+    outline: 0;
+}
+
+/*SIDEBAR*/
+.sidebar{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 9;
+    padding: 15px;
+    background-color: #888;
+    overflow: hidden;
+}
+
+.sidebar-menu{
+    color: #fff;
+}
+
+.main-content{
+    padding-top: 65px;
+}
+
+/*Extra small devices (mobile)*/
+@media (max-width: 576px) {
+     .sidebar{
+        width: 0%;
+        height: 100vh;
+        padding: 0px;
+        
+        -webkit-transition: width 0.1s ease-in-out, height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        -moz-transition: width 0.1s ease-in-out, height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        transition: width 0.1s ease-in-out, height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    }
+    
+    .main-content{
+        padding-left: 0px;
+
+        -webkit-transition: padding-left 0.4s ease-in-out;
+        -moz-transition: padding-left 0.4s ease-in-out;
+        transition: padding-left 0.4s ease-in-out;
+    }
+
+    .top-nav{
+        background-color: #888;
+
+        -webkit-transition: background-color 0.4s ease-in-out;
+        -moz-transition: background-color 0.4s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    .top-nav .top-right-menu{
+        color: #fff;
+        
+        -webkit-transition: color 0.4s ease-in-out;
+        -moz-transition: color 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
+
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .sidebar{
+        width: 170px;
+        
+        -webkit-transition: width 0.4s ease-in-out;
+        -moz-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .main-content{
+        padding-left: 170px;
+        
+        -webkit-transition: padding-left 0.4s ease-in-out;
+        -moz-transition: padding-left 0.4s ease-in-out;
+        transition: padding-left 0.4s ease-in-out;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px){
+    .sidebar{
+        width: 200px;
+        
+        -webkit-transition: width 0.4s ease-in-out;
+        -moz-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .main-content{
+        padding-left: 200px;
+        
+        -webkit-transition: padding-left 0.4s ease-in-out;
+        -moz-transition: padding-left 0.4s ease-in-out;
+        transition: padding-left 0.4s ease-in-out;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .sidebar{
+        width: 300px;
+        
+        -webkit-transition: width 0.4s ease-in-out;
+        -moz-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .main-content{
+        padding-left: 300px;
+        
+        -webkit-transition: padding-left 0.4s ease-in-out;
+        -moz-transition: padding-left 0.4s ease-in-out;
+        transition: padding-left 0.4s ease-in-out;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+    .sidebar{
+        width: 300px;
+        
+        -webkit-transition: width 0.4s ease-in-out;
+        -moz-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .main-content{
+        padding-left: 300px;
+        
+        -webkit-transition: padding-left 0.4s ease-in-out;
+        -moz-transition: padding-left 0.4s ease-in-out;
+        transition: padding-left 0.4s ease-in-out;
+    }
+    
+}
