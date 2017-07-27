@@ -40,5 +40,12 @@ namespace PMIS.web.Controllers
 
             return View();
         }
+
+        public ActionResult Test2()
+        {
+            ViewBag.Message = "Jeonha";
+
+            return View();
+        }
     }
 }
